@@ -1,0 +1,77 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <header>
+
+  </header>
+</head>
+<body>
+
+<div class="cont2">
+
+
+  <!--<div class="login__form">-->
+  <br><br>
+  <h2 style="color:beige" align="center">Score Update <br></h2>
+  <br><br>
+  <div align="center"  id="teamslisthome" data-ng-init="listTeams()">
+    <span style="color:white;font-family:'Times New Roman'"> select team: <select id="dropdownteams" required autofocus ng-model=dropdownvalue></select></span>
+  </div>
+  <div class="login__row">
+    <input type="number" id="score" style="color:white" class="login__input name" placeholder="score" required autofocus ng-model="score">
+  </div>
+  <div class="login__row">
+    <input type="text" id="comments" style="color:white" class="login__input name" placeholder="comments" required autofocus ng-model="comments">
+  </div>
+
+
+  <button class="button button-block button-balanced padding-horizontal" ng_click="scoreSubmit(dropdownvalue,score,comments)" type="submit">submit</button>
+<br><br>
+
+  <button class="button button-block button-balanced padding-horizontal" ng_click="finalsubmit()" type="submit">final submit</button>
+
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+  <!--<meta charset="UTF-8">-->
+  <!--<title>Teams</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1 align="center" style="color:royalblue">Scores Update<br></h1>-->
+<!--<div align="center"  id="teamslisthome" data-ng-init="listTeams()">-->
+  <!--<span style="color:#3399ff;font-family:'Times New Roman'"> select team: <select id="dropdownteams" required autofocus ng-model=dropdownvalue></select></span>-->
+<!--</div>-->
+
+<!--<div class="list list-inset">-->
+  <!--<label class="item item-input">-->
+    <!--<input type="number" id="score" class="form-control" placeholder="score" required autofocus ng-model="score">-->
+  <!--</label>-->
+  <!--<label class="item item-input">-->
+    <!--<input type="text" id="comments" class="form-control" placeholder="comments" required autofocus ng-model="comments">-->
+  <!--</label>-->
+<!--</div>-->
+<!--<button ng_click="scoreSubmit(dropdownvalue,score,comments)" type="submit">submit</button>-->
+
+<!--<br><br>-->
+<!--</div>-->
+
+<!--<div>-->
+  <!--<div>-->
+    <!--<button ng_click="finalsubmit()" type="submit">final submit</button>-->
+  <!--</div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
